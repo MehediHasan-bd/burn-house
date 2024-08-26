@@ -47,6 +47,9 @@
         </script>
 
         <style>
+            html {
+                scroll-behavior: smooth;
+            }
             .manrupe-font {
                 font-family: 'Manrope', sans-serif;
             }
@@ -72,7 +75,7 @@
 
                     <div class="navbar-center hidden lg:block">
                         <div class="flex gap-8">
-                            <a href="#" class="font-bold">Home</a>
+                            <a href="#banner-section" class="font-bold">Home</a>
                             <a href="#">Services</a>
                             <a href="#">Portfolio</a>
                             <a href="#">Blog</a>
@@ -123,6 +126,41 @@
                 </div>
             </nav>
             <!--nav bar end here-->
+
+            <!--banner section start here-->
+            <section id="banner-section" class="mb-24">
+                <div class="container w-11/12 mx-auto flex flex-col gap-8">
+                    <div
+                        class="banner-img lg:w-7/12 w-full mx-auto flex justify-center">
+                        <img src="./assets/banner.png" class="" />
+                    </div>
+
+                    <div
+                        class="banner-text text-center lg:w-8/12 md:w-10/12 w-full mx-auto">
+                        <!--banner title & subtitle-->
+                        <h1
+                            class="text-[28px] xl:text-6xl md:text-4xl font-extrabold">
+                            A barn house of this design has a striking
+                            appearance
+                        </h1>
+                        <p
+                            class="pt-6 pb-8 text-base text-gray-600 font-medium">
+                            The barn house captivates with its blend of rustic
+                            charm and modern sophistication, featuring weathered
+                            wood, sleek metal accents, and large windows that
+                            flood the space with natural light.
+                        </p>
+                        <!--banner button-->
+                        <button
+                            class="btn border-bgbtn text-xl rounded-3xl bg-bgbtnm text-black font-bold">
+                            View Details
+                            <i
+                                class="fa-solid fa-arrow-right text-lg -rotate-45 badge py-5 px-3 bg-bgbtn"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!--banner section end here-->
         </header>
     </body>
 </html>
